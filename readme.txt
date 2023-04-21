@@ -22,3 +22,18 @@
     - in this array add particular file or the banch of files i.e. "*.dev.ts" or "**/*.dev.ts" // in a folder
     - or add "include" and include all the files or folders // it works include minus exclude
     - add "files" - to compile specific files
+8. How to push the project to github for the first time?
+    - Open the folder you want to upload in VS Code.
+    - Initialize a Git repository in the folder by opening the VS Code terminal and typing the following command:
+        git init
+    - Create a new repository on GitHub.com.
+    - Copy the HTTPS URL of the repository.
+    - In VS Code, open the Command Palette by pressing Ctrl + Shift + P on Windows or Cmd + Shift + P on Mac.
+    - Type "Git: Add Remote" and select the command.
+    - Paste the HTTPS URL of the repository and press Enter.
+    - Stage all the files in the folder for commit by clicking the "+" icon in the Source Control panel.
+    - Enter a commit message describing the changes you're uploading.
+    - Click the checkmark icon in the Source Control panel to commit the changes.
+    - Push the changes to GitHub by clicking the "..." icon in the Source Control panel and selecting "Push".
+    - Enter your GitHub credentials when prompted.
+    - Wait for the upload to complete.
