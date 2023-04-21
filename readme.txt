@@ -36,4 +36,4 @@
     - Click the checkmark icon in the Source Control panel to commit the changes.
     - Push the changes to GitHub by clicking the "..." icon in the Source Control panel and selecting "Push".
     - Enter your GitHub credentials when prompted.
-    - Wait for the upload to complete.
+    - Wait for the upload to complete
