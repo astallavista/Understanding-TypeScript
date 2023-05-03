@@ -1,8 +1,21 @@
-const names: Array<string> = [];  // Generic type
-// names[0].split(' ');
+class ProjectInput {
+    templateElement: HTMLTemplateElement;
+    hostElement: HTMLDivElement;
+    element: HTMLFormElement;
 
-const promise = new Promise((resolve, reject) => {
-    setTimeout (() => {
-        resolve('This is done!');
-    }, 2000);
-});
+    constructor() {
+        this.templateElement = document.getElementById('project-input')! as HTMLTemplateElement;
+        this.hostElement = document.getElementById('app')! as HTMLDivElement;
+
+        const importedNode = document.importNode(this.templateElement.content, true);
+        this.element = importedNode.firstElementChild as HTMLFormElement;
+        this.element.id = 'user-input';
+        this.attach();
+    }
+
+    private attach() {
+        this.hostElement.insertAdjacentElement('afterbegin', this.element);
+    }
+}
+
+const prjInput = new ProjectInput()
